@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<title>Sample01</title>
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script>
+alert(document.getElementById('test').innerHTML + " html：<head>～</head>内記述");
+</script>
+<script src="sample02a.js"></script>
+<script src="sample02c.js"></script>
+</head>
+<body>
+<h1>Sample01</h1>
+<p id="test">さんぷる</p>
+
+
+<script>
+alert(document.getElementById('test').innerHTML + " html：</body>直前記述");
+</script>
+<script src="sample02b.js"></script>
+</body>
+</html>

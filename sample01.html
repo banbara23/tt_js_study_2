@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<title>Sample01</title>
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- HTMLファイルに直接コードを記述する場合 -->
+<script>
+// 1行コメントアウト
+/*
+  複数行コメントアウト
+*/
+window.onload = function(){
+  document.getElementById('test1').innerHTML = 'Hello World!!';//コードの最後には「;」（セミコロン）を記述し、ここでコードが終わることを明示します
+}
+
+</script>
+</head>
+<body>
+<h1>Sample01</h1>
+<p id="test1"></p>
+<p id="test2"></p>
+<!-- 外部jsファイルにコードを記述する場合 -->
+<script src="sample01.js"></script>
+</body>
+</html>

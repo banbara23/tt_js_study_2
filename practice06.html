@@ -1,0 +1,754 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Practice06</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="http://www.temptech.co.jp/css/import.css" rel="stylesheet" type="text/css" />
+<link href="http://www.temptech.co.jp/css/info.css" rel="stylesheet" type="text/css" />
+<link href="http://www.temptech.co.jp/css/print.css" rel="stylesheet" type="text/css" media="print" />
+<style type="text/css">
+<!--
+.style2 {
+	font-weight: bold;
+}
+.style3 {
+	font-weight: bold;
+	color: #CC0000;
+}
+
+#mainColumn dl.list01 dd{
+	padding-left:100px;
+	text-indent:0;
+}
+#mainColumn dl.list01 dd a{
+	display:inline-block;
+	background-position:0 4px;
+}
+
+#mainColumn a[target='_blank']{
+	background-color:#ffff66;
+}
+#mainColumn a[target='_blank']::after{
+	content:'（別窓）';
+	font-size:9px;
+	display:inline-block;
+}
+#mainColumn a.outSiteLink[target='_blank']{
+	background-color:#ffcccc;
+}
+#mainColumn a.outSiteLink[target='_blank']::after{
+	content:'（外部）';
+	font-size:9px;
+	display:inline-block;
+}
+-->
+</style>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="practice06.js" char="utf-8"></script>
+</head>
+
+<body lang="ja" id="info">
+<div class="wrapper">
+
+<!--▼header▼-->
+<div id="header">
+	<div id="logo"><a href="/"><img src="http://www.temptech.co.jp/img/common/head_logo.gif" alt="TT（テンプスタッフ・テクノロジー）" width="143" height="35" align="left"/></a></div>
+	<h1 class="siteName">IT派遣・エンジニア派遣の【TT（テンプスタッフ・テクノロジー）】。<br>TTは18年以上にわたり1000人以上のエンジニアを育ててきた<br>IT特化の人材派遣・紹介予定派遣・転職支援会社です。</h1>
+	<div id="subNav"><a href="/form/apply.php?FID=0003">スタッフ様お問い合わせ</a><br><a href="/form/apply.php?FID=0004">クライアント様お問い合わせ</a><br><a href="/sitemap/">サイトマップ</a></div>
+	<div id="siteSeach">
+		<FORM method="GET" action="http://www.google.co.jp/search">
+			<span><input name="q" type="text" class="keyword" /></span><input name="btnG" type="image" src="http://www.temptech.co.jp/img/common/btn_seach_01.gif" class="btn" />
+			<INPUT type="hidden" name="hl" value="ja" />
+			<INPUT type="hidden" name="as_sitesearch" value="temptech.co.jp/" />
+			<INPUT type="hidden" name="ie" value="UTF-8" />
+			<INPUT type="hidden" name="oe" value="UTF-8" />
+		</form>
+	</div>
+	<div id="staffLogin"><a href="https://www.tempstaff.co.jp/stmy/mp010101.do?FROM_DISP_INFO=001" onclick="javascript:_gaq.push(['_trackPageview', '/cojp_01']);"><img src="http://www.temptech.co.jp/img/common/btn_login_01_out.gif" alt="スタッフログイン" width="106" height="22" /></a></div>
+</div>
+<!-- / #header -->
+
+<div id="globalNav">
+	<ul>
+		<li class="globalNav01"><a href="http://haken.temptech.co.jp/guide/index.html" onclick="javascript:_gaq.push(['_trackPageview', '/cojp_02']);"><img src="http://www.temptech.co.jp/img/common/globalnav_10_out.gif" alt="派遣のお仕事がはじめての方へ" height="40" /></a></li>
+		<li class="globalNav02"><a href="http://haken.temptech.co.jp/jobsearch/" onclick="javascript:_gaq.push(['_trackPageview', '/cojp_03']);"><img src="http://www.temptech.co.jp/img/common/globalnav_02_out.gif" alt="仕事検索" height="40" /></a></li>
+		<li class="globalNav03"><a href="http://recruit.temptech.co.jp/" onclick="javascript:_gaq.push(['_trackPageview', '/cojp_04']);"><img src="http://www.temptech.co.jp/img/common/globalnav_07_out.gif" alt="テンプスタッフ・テクノロジーの採用情報" height="40" /></a></li>
+		<li class="globalNav04"><a href="/company/" onclick="javascript:_gaq.push(['_trackPageview', '/cojp_05']);"><img src="http://www.temptech.co.jp/img/common/globalnav_04_out.gif" alt="会社案内" height="40" /></a></li>
+		<li class="globalNav05"><a href="/office/" onclick="javascript:_gaq.push(['_trackPageview', '/cojp_06']);"><img src="http://www.temptech.co.jp/img/common/globalnav_05_out.gif" alt="オフィス一覧" height="40" /></a></li>
+		<li class="globalNav06"><a href="/enterprise/" onclick="javascript:_gaq.push(['_trackPageview', '/cojp_07']);"><img src="http://www.temptech.co.jp/img/common/globalnav_06_out.gif" alt="企業のご担当者様へ" height="40" /></a></li>
+	</ul>
+</div>
+<!-- / #globalNavi -->
+
+<!--▼contents▼-->
+<div class="contents" id="index">
+	<!--▼mainColumn▼-->
+	<div id="mainColumn">
+		<div id="pkz"><a href="/">TOPページ</a> &gt; お知らせ</div>
+		<h2 class="contentsTitle_text_text">お知らせ</h2>
+
+		<div id="info2015" class="show">
+			<h3 class="subTitle_text1"><span>2015年度</span></h3>
+			<div class="textBox01">
+				<dl class="list01 clearfix">
+					<dt>2015.08.20</dt>
+					<dd><span class="style3"></span><a href="/info/150820.html">【新宿オフィス】登録スペース　リニューアルしました！</a></dd>
+					<dt>2015.07.15</dt>
+					<dd><span class="style3"></span><a href="http://www.temptech.co.jp/lp/encaree/">縁キャリ、はじめます。あなたの街で。<br>出張面談・相談会開催中</a></dd>
+					<dt>2015.07.14</dt>
+					<dd><span class="style3"></span><a href="/info/150713.html">【夏得な】新規登録キャンペーン！7/1～</a></dd>
+					<dt>2015.06.30</dt>
+					<dd><span class="style3"></span><a href="/guide/merit/service/">福利厚生充実宣言2015！！<br>スタッフの皆様に「学び・資格取得」「暮らしの充実」をご用意いたしました！</a></dd>
+					<dt>2015.06.30</dt>
+					<dd><span class="style3"></span><a href="/info/150701_touroku.html">【首都圏限定！】新規登録キャンペーン！対象職種にご登録いただいた方にQUOカードプレゼント！</a></dd>
+					<dt>2015.06.30</dt>
+					<dd><span class="style3"></span><a href="/info/150701_shoukai.html">お友達紹介キャンペーン！ご友人や知人の方を紹介して10,000円もらおう！</a></dd>
+					<dt>2015.06.22</dt>
+					<dd><span class="style3"></span><a href="/info/150622.html">【首都圏限定！】OSS応援キャンペーン　2015夏！<br>新規登録でご来社頂いた方にLPI-Japanの各種OSS資格の応援ノートをプレゼント！</a></dd>
+					<dt>2015.06.18</dt>
+					<dd><span class="style3"></span>【東海エリア　7/7西尾開催！】出張登録説明会＆キャリア相談会開催！</dd>
+					<dt>2015.06.11</dt>
+					<dd><span class="style3"></span>【東海エリア　6/19尾張・6/20知多】出張登録説明会＆キャリア相談会開催！</dd>
+					<dt>2015.06.01</dt>
+					<dd><span class="style3"></span><a href="/info/150605.html">【スタッフの皆様】エンジニア・オブ・ザ・イヤー2015　是非ご応募ください！</a></dd>
+					<dt>2015.06.01</dt>
+					<dd><span class="style3"></span><a href="https://job.rikunabi.com/2017/company/internship/r662200024/">2017年度新卒向け　インターンシップ募集開始しました！</a></dd>
+					<dt>2015.05.08</dt>
+					<dd><span class="style3"></span><a href="http://recruit.temptech.co.jp/recruit/entry.html">【キャリア採用】お祝い金がもらえる！</a></dd>
+					<dt>2015.05.01</dt>
+					<dd><span class="style3"></span><p><span class="style3"></span>システムメンテナンスのお知らせ<br />5/2（土）0：00～5/5（火）9：00（予定）上記期間はテンプスタッフが運営する一部WEBサイトを停止させていただきます。<br />ご不便をおかけいたしますが、よろしくお願いいたします。</p></dd>
+					<dt>2015.04.15</dt>
+					<dd><span class="style3"></span><p><span class="style3"></span>システムメンテナンスのお知らせ<br />4/26（日）9：00～18：00（予定）上記期間はテンプスタッフが運営する一部WEBサイトを停止させていただきます。<br />ご不便をおかけいたしますが、よろしくお願いいたします。</p></dd>
+					<dt>2015.04.22</dt>
+					<dd><span class="style3"></span>【名古屋】5/7、8　しごと体験会、まずは説明会におこしください！</dd>
+					<dt>2015.04.15</dt>
+					<dd><span class="style3"></span><p><span class="style3"></span>システムメンテナンスのお知らせ<br />4/18（土）7：00～4/20（月）8：00（予定）上記期間はテンプスタッフが運営する一部WEBサイトを停止させていただきます。<br />尚、WEBでの登録予約は、4/17（金）18：00より停止させていただきます。<br />ご不便をおかけいたしますが、よろしくお願いいたします。</p></dd>
+					<dt>2015.04.06</dt>
+					<dd><span class="style3"></span><a href="/openroom/syutoken/">OpenRoom＠首都圏リニューアル！</a><a href="/openroom/tokai/">OpenRoom＠東海</a><a href="/openroom/kansai/">OpenRoom＠関西も好評実施中！！</a><br />OpenRoomは無料で利用できる自習室です！</dd>
+					<dt>2015.04.06</dt>
+					<dd><span class="style3"></span>【名古屋】4/11　しごと体験会、まずは説明会におこしください！</dd>
+					<dt>2015.04.02</dt>
+					<dd><span class="style3"></span><a href="http://www.temptech.co.jp/info/150402.html">第4回「日本HRチャレンジ大賞」においてU_29が奨励賞を受賞いたしました</a></dd>
+				</dl>
+			</div>
+			<!-- / .textBox01 -->
+		</div>
+		<!-- / #list2013 -->
+
+		<div id="info2014" class="show">
+			<h3 class="subTitle_text1"><span>2014年度</span></h3>
+			<div class="textBox01">
+				<dl class="list01 clearfix">
+					<dt>2015.03.10</dt>
+					<dd><span class="style3"></span><a href="http://recruit.temptech.co.jp/recruit/entry.html">来たれ！エンジニア！　4月入社限定！　お祝い金がもらえる！</a></dd>
+					<dt>2015.03.06</dt>
+					<dd><span class="style3"></span>2015年3月23日よりテンプスタッフ・テクノロジー　豊田オフィスが移転いたします</a></dd>
+					<dt>2015.03.05</dt>
+					<dd><span class="style3"></span><a href="/info/150305.html">テンプスタッフ・テクノロジー　2016年度新卒採用募集開始しました！</a></dd>
+					<dt>2015.02.23</dt>
+					<dd><span class="style3"></span>経験者限定　IT＆機電エンジニア　新規登録キャンペーン実施中！　～3/31まで</dd>
+					<dt>2015.01.28</dt>
+					<dd><span class="style3"></span><a href="/openroom/">OpenRoom大阪で新プログラムスタート！<br>Webプログラミング（.NET、Java、Ruby）自習室＠大阪</a></dd>
+					<dt>2015.01.23</dt>
+					<dd><span class="style3"></span><a href="http://recruit.temptech.co.jp">テンプスタッフ・テクノロジー社員採用サイトがオープンしました！</a></dd>
+					<dt>2015.01.09</dt>
+					<dd><span class="style3"></span><a href="http://www.temptech.co.jp/lp/internship/index_its.html">インターンシップ応募受付中！<br>～シゴト場の臨場感を体感！「エンジニア」と「人事担当職」を体験できます！～<br>【東京】1/31、2/14　【名古屋】2/7　【大阪】2/6、2/17</a></dd>
+					<dt>2014.12.25</dt>
+					<dd><span class="style3"></span><a href="/guide/merit/skillup/toeic_tokai.html">【東海エリア限定】就業スタッフ向け　英語スキルアップ応援企画</a></dd>
+					<dt>2014.12.22</dt>
+					<dd>年末年始休業日のご案内<br>テンプスタッフ・テクノロジーは、年内12月26日（金）まで、年始は1月5日（月）より営業を開始します。</dd>
+					<dt>2014.11.19</dt>
+					<dd><a href="https://www3.jitec.ipa.go.jp/JitesCbt/html/about/company.html">IPA Webサイトに弊社代表　藤崎のインタビューが掲載されました</a></dd>
+					<dt>2014.10.08</dt>
+					<dd>システムメンテナンスのお知らせ　＜10/12(日)　7：30～22：00＞<br>上記期間はテンプスタッフが運営する一部WEBサイトを停止させていただきます。ご利用の皆様にはご不便をおかけいたしますが、ご了承のほどお願い申し上げます。</dd>
+					<dt>2014.09.17</dt>
+					<dd><a href="/info/140912.html">≪トライ！CATIA2014　3DCADエンジニア育成プログラム≫が始まります！まずは説明会にご参加ください！</a></dd>
+					<dt>2014.09.12</dt>
+					<dd>◆新宿オフィス限定◆雨の日ご来社プレゼントを進呈！</dd>
+					<dt>2014.09.05</dt>
+					<dd>エンジニア応援キャンペーン！2015年3月31日まで！お友達紹介で最大１万３千円！プレゼント★</dd>
+					<dt>2014.08.29</dt>
+					<dd>就業お祝い金キャンペーン！2015年3月31日まで！就業開始された方に３万円プレゼント★</dd>
+					<dt>2014.08.28</dt>
+					<dd><a href="http://www.tempstaff.co.jp/corporate/release/2014/20140825_3762.html">テンプグループ・チャレンジウーマン・スカラシップ　海外留学・フィールドワーク奨学生10名募集開始 </a></dd>
+					<dt>2014.08.18</dt>
+					<dd><a href="/openroom/">【☆Open Room＠関西】大阪に続き京都もOPEN！<br>ご登録をいただいている皆様に自由にPCを使っていただける自習室を無料開放します！</a></dd>
+					<dt>2014.07.29</dt>
+					<dd><a href="/u_29/">『学ぶ』→『就く』で未来を変える！20代のキャリアチェンジプログラム<br /><span class="style2">U_29</span>　サイト、リニューアルしました！</a></dd>
+					<dt>2014.07.23</dt>
+					<dd><a href="/openroom/">【☆Open Room＠大阪】ご登録をいただいている皆様に自由にPCを使っていただける自習室を無料開放します！　in　大阪</a></dd>
+					<dt>2014.07.03</dt>
+					<dd>エンジニア応援キャンペーン！2015年3月末まで！お友達紹介で最大13000円！プレゼント★</dd>
+					<dt>2014.05.14</dt>
+					<dd>エンジニア応援キャンペーン！6月末までの登録で商品券5000円！お友達紹介も最大13000円！プレゼント★</dd>
+					<dt>2014.04.21</dt>
+					<dd><a href="http://www.tempstaff.co.jp/corporate/release/2014/pdf/20140418_01.pdf">大阪オフィス 移転のご案内</a></dd>
+				</dl>
+			</div><!-- / .textBox01 -->
+		</div><!-- / #list2013 -->
+
+		<div id="info2013" class="show">
+			<h3 class="subTitle_text1"><span>2013年度</span></h3>
+			<div class="textBox01">
+				<dl class="list01 clearfix">
+					<dt>2014.02.19</dt>
+					<dd><a href="http://www.pref.aomori.lg.jp/sangyo/energy/academic_support_seminar2013_2.html">3/14（土）青森県にて開催される「第２回情報アカデミックサポートセミナー」におきまして、<br>弊社社員がセミナー「新戦力を創る～ゼロからのICTエンジニア～」に登壇いたしました</a></dd>
+					<dt>2014.02.19</dt>
+					<dd><a href="/info/140219.html">幕張オフィス統合に関するお知らせ</a></dd>
+					<dt>2014.02.14</dt>
+					<dd>2/22（土）・3/1（土）・3/8（土）・3/15（土）10:00～、14:00～【新宿オフィス　土曜登録会】開催！</dd>
+					<dt>2014.02.14</dt>
+					<dd>Wキャンペーン！！３月末までの登録で商品券1万円！４月からのお仕事スタートで最大５万円！プレゼント★</dd>
+					<dt>2014.02.05</dt>
+					<dd>【名古屋】2/15(土)、22(土)　CATIA自習開放のお知らせ　★ご希望の方にキャリアカウンセリング有り★</dd>
+					<dt>2014.02.03</dt>
+					<dd>【首都圏】2/13(木)、14(金)★Akiba-2-Days-2nd★バレンタインSpecialキャリア相談会！</dd>
+					<dt>2014.01.24</dt>
+					<dd>ジョブチェキ！サイトリニューアルに伴うシステムメンテナンス(2014年1月24日15:00～1月27日9:00)と、一部サービス終了のお知らせ</dd>
+					<dt>2014.01.16</dt>
+					<dd>1/25・2/15【東海地区】土曜登録会開催！<br>名古屋オフィス　／　豊田オフィス　／　刈谷オフィス</dd>
+					<dt>2014.01.14</dt>
+					<dd>大手家電メーカーにて、CAD機械設計者、大募集！土曜登録会＆お仕事相談会★in横浜オフィス</dd>
+					<dt>2013.12.27</dt>
+					<dd>【首都圏】1/23（木）KONAMI×テンプスタッフ・テクノロジー合同主催<br />LAMPエンジニア/WEBデザイナー特別登録相談会</dd>
+					<dt>2013.12.27</dt>
+					<dd><a href="/info/131227.html">【豊田オフィス限定】働くママさんを応援 !!☆託児施設料金３時間分を補助します☆</a></dd>
+					<dt>2013.12.26</dt>
+					<dd>テンプスタッフ・テクノロジー（株）は、年内12月27日まで、1月6日より営業を開始いたします</dd>
+					<dt>2013.12.26</dt>
+					<dd><a href="/guide/about_registration/meeting/#trip_toyota1">【岡崎】三河エリアで働こう！＜ＣＡＤ設計・ＩＴエンジニア＞</a></dd>
+					<dt>2013.12.09</dt>
+					<dd><a href="/info/131206.html">12月～　テクニカルサポート業務のバックサポートを始めました</a></dd>
+					<dt>2013.11.01</dt>
+					<dd><a href="http://www.ictepc.jp/ictes2013/program/index.html#programDetail2_2">11/9（土）東京大学にて開催される「情報通信技術教育者合同会議」におきまして、<br>弊社社員が基調対談「新戦力の育成 ～未経験からの ICTエンジニア～」に登壇いたします</a></dd>
+					<dt>2013.10.31</dt>
+					<dd>【岡崎】三河エリアで働こう！＜ＣＡＤ設計・ＩＴエンジニア＞出張登録説明会</dd>
+					<dt>2013.10.01</dt>
+					<dd><a href="/info/131001.html">テンプスタッフ・テクノロジー株式会社 事業譲渡に関するお知らせ</a></dd>
+					<dt>2013.09.12</dt>
+					<dd><a href="/enterprise/index.html">20％OFFキャンペーン中「PC/OSリプレイスサービス」</a></dd>
+					<dt>2013.09.09</dt>
+					<dd>【豊田オフィス限定】　就業お祝い金キャンペーン開催中！＜2013/9/2～2014/1/31＞</dd>
+					<dt>2013.08.28</dt>
+					<dd>【首都圏】9/14・9/28　土曜登録会in幕張　現在お仕事中の方など、平日や昼間にご登録が難しい方にオススメです！</dd>
+					<dt>2013.08.19</dt>
+					<dd>【東海】8/31・9/7・9/28　土曜登録会in名古屋　時間に余裕の土曜日だから平日お忙しい方にオススメです！</dd>
+					<dt>2013.08.19</dt>
+					<dd>【東海】8/31・9/7・9/14　土曜登録会in刈谷　機械設計からネットークの構築まで！お仕事情報たくさんあります！</dd>
+					<dt>2013.08.12</dt>
+					<dd>【東海】8/31・9/14　土曜登録会in豊田　土曜日だからお仕事でお忙しい方にもオススメ！です！</dd>
+					<dt>2013.08.01</dt>
+					<dd>お客様、並びにスタッフの皆様へ<br />2013年8月13日（火）、8月14日（水）は会社休日となり、全オフィスはお休みを頂きます。<br />皆様にはご迷惑をおかけいたしますが、何卒よろしくお願い申し上げます。</dd>
+					<dt>2013.07.26</dt>
+					<dd>【首都圏】8/21　テクノロジー×クリエイティブ<br>Webクリエイター派遣を行う２社が合同で登録会を開催</dd>
+					<dt>2013.07.26</dt>
+					<dd>【首都圏】8/24　土曜登録会in銀座　9月以降のお仕事も多数入っております！</dd>
+					<dt>2013.07.10</dt>
+					<dd>【首都圏】8/2　ネットワーク・サーバエンジニア経験者採用説明会開催！<br>ご好評につきお申し込みはお早めに！！</dd>
+					<dt>2013.07.10</dt>
+					<dd>【首都圏】7/18　ネットワーク・サーバエンジニア経験者採用説明会開催！</dd>
+					<dt>2013.06.28</dt>
+					<dd>【東海】7/29　機械製図基礎＋2D-CAD講座が開講いたします！</dd>
+					<dt>2013.06.10</dt>
+					<dd>テンプスタッフ・テクノロジーは、日本最大のセキュリティコンテストSECCON2013に協賛しています<br><a href="http://www.jnsa.org/press/2013/130607.pdf">・特定非営利活動法人日本ネットワークセキュリティ協会（以下「JNSA」）のプレスリリースはこちら</a><br><a href="http://www.jnsa.org/seccon/">・セキュリティコンテスト（JNSA）のページはこちら</a></dd>
+					<dt>2013.06.06</dt>
+					<dd>Autodesk AutoCAD2013 プロッフェッショナル資格対策講座は今後のキャリアアップに活用できるイチオシの資格です！</dd>
+					<dt>2013.05.16</dt>
+					<dd>☆OPEN AutoCAD@　大阪、京都でAutoCADを自由に使える自習室がオープンしました！</dd>
+					<dt>2013.04.03</dt>
+					<dd>『未来の私サプリ』更新しました♪　～組込みソフト開発エンジニア　茅沼さんインタビュー～</dd>
+				</dl>
+			</div>
+			<!-- / .textBox01 -->
+		</div>
+		<!-- / #list2013 -->
+
+		<div id="info2012" class="show">
+			<h3 class="subTitle"><img src="http://www.temptech.co.jp/img/info/index_ttl_05.gif" alt="2012年度" /></h3>
+			<div class="textBox01">
+				<dl class="list01 clearfix">
+					<dt>2013.03.06</dt>
+					<dd>【登録会情報】3/16,23 心機一転！春から新しいお仕事を始めませんか？<br>CAD・Web・DTP職種限定！銀座オフィスで土曜登録会を開催！</dd>
+					<dt>2013.03.05</dt>
+					<dd>【出張登録会情報】3/13（水）テクノロジー×クロス合同登録説明会＠海老名</dd>
+					<dt>2013.03.04</dt>
+					<dd>【登録会情報】3/9（土）横浜オフィスで登録会を開催します。春からは港町横浜でお仕事START！！</dd>
+					<dt>2013.03.01</dt>
+					<dd>【登録会情報】3/9,16：新宿オフィスで土曜登録会開催！春からのお仕事、見つけませんか？</dd>
+					<dt>2013.02.28</dt>
+					<dd><a href="/info/130227.html">新規来社登録キャンペーン！選べるギフト券プレゼント！「クオカードもしくはアマゾンギフト券」</a></dd>
+					<dt>2013.02.27</dt>
+					<dd>AutoCADソフトを自由に触れる無料自習室☆OPEN AutoCAD@をご利用ください！</dd>
+					<dt>2013.02.13</dt>
+					<dd><a href="/supple/news_menu.html">『未来の私サプリ』更新しました♪　～Javaエンジニア高橋さんのインタビュー～</a></dd>
+					<dt>2013.02.06</dt>
+					<dd>CAD・Web・DTP職種限定！3月からのお仕事を狙う方必見！<br />銀座オフィスで土曜登録会を開催します！</dd>
+					<dt>2013.01.25</dt>
+					<dd>【これがスゴイ！】Challenge AutoCAD！2月度スケジュール発表！</dd>
+					<dt>2013.01.23</dt>
+					<dd>『CAD通信♪』更新しました　～BIM体験セミナーレポート～</dd>
+					<dt>2013.01.23</dt>
+					<dd><a href="http://connpass.com/event/1687/">第3回関西ソーシャルメディア勉強会、ライトニングトークにてテンプスタッフ・テクノロジーがアプリコンテストについて語ります！</a></dd>
+					<dt>2013.01.11</dt>
+					<dd>ご好評につき☆OPEN AutoCADが幕張でもスタート！！<br />☆OPEN AutoCAD@MAKUHARI</dd>
+					<dt>2013.01.07</dt>
+					<dd><a href="http://www.tempstaff.co.jp/personal/stepup/su_pro_034.html">テンプスタッフ・テクノロジーではテンプグループの事務系専門職・スキルアップ支援講座<br />「これからはじめるＨＴＭＬ講座」の総合監修・提携運営をしています</a></dd>
+					<dt>2012.12.28</dt>
+					<dd><a href="http://cts-1.sakura.ne.jp/client/mayumaro/index.html">『第１回 京都“まゆまろ”アプリコンテスト』開催！<br />テンプスタッフ・テクノロジーも協賛しています！</a></dd>
+					<dt>2012.12.17</dt>
+					<dd>【新大阪】初心者、スキルチェンジをお考えの方を対象に、60分のお試し体験会<br>ハイエンド3D-CAD無料体験講座開講しました！</dd>
+					<dt>2012.12.14</dt>
+					<dd>☆OPEN AutoCAD@TACHIKAWA<br>OPENAutoCADが立川でもスタート！！最新AutoCAD触れます！！</dd>
+					<dt>2012.12.05</dt>
+					<dd>【大好評につき緊急発表】2013年１月のChallenge AutoCAD！スケジュール第7弾更新！</dd>
+					<dt>2012.11.30</dt>
+					<dd>【大好評！】今年最後のChallenge AutoCAD！スケジュール第6弾更新！</dd>
+					<dt>2012.11.19</dt>
+					<dd>☆OPEN AutoCAD@YOKOHAMA<br>ご登録の皆様に、自由にCADを使っていただける“OPEN　AutoCAD”が横浜オフィスでスタート！！</dd>
+					<dt>2012.10.26</dt>
+					<dd>11/17(土),12/1(土)　　CAD・Web・DTP職種限定！キャリア相談大歓迎！<br />銀座オフィス 秋の土曜登録会を開催します！</dd>
+					<dt>2012.10.17</dt>
+					<dd>Challenge AutoCAD！スケジュール第5弾更新！</dd>
+					<dt>2012.10.10</dt>
+					<dd>10/13　土曜登録会in横浜<br />☆希望の仕事に就ける職務経歴書って？特別レクチャー＋虎の巻プレゼント！</dd>
+					<dt>2012.10.05</dt>
+					<dd><a href="/seminar_event/app_party/">アプリコンテスト開催！！<br>シニア向けアプリコンテスト開催！お年寄りも使えるやさしいアプリを作ろう！</a></dd>
+					<dt>2012.09.26</dt>
+					<dd>やっぱりコレ！Challenge AutoCAD！スケジュール第4弾更新！</dd>
+					<dt>2012.09.12</dt>
+					<dd>9/29　☆新宿オフィス☆開発・インフラ職種限定の土曜日登録会、開催決定です！</dd>
+					<dt>2012.08.29</dt>
+					<dd>小山周辺で働こう！＜ITエンジニア・CADオペレーター・CAD設計者＞<br />毎月第2・4水曜日　15：30～　　出張登録説明会開催</dd>
+					<dt>2012.08.28</dt>
+					<dd><a href="/seminar_event/combi/index.html">Combi×テンプスタッフ・テクノロジーデザインコンペティンション結果発表！<br>～グランプリ作品をはじめご応募いただいた方の作品を掲載いたしました！～</a></dd>
+					<dt>2012.08.28</dt>
+					<dd>秋のChallenge AutoCAD！スケジュール第3弾更新しました！</dd>
+					<dt>2012.08.23</dt>
+					<dd>銀座オフィス　12名限定！クリエイター派遣を行う２社が合同で登録会を開催！！</dd>
+					<dt>2012.08.22</dt>
+					<dd>銀座オフィス　CAD・Web・DTP職種限定！９月の土曜登録会開催！！</dd>
+					<dt>2012.08.22</dt>
+					<dd>横浜オフィス≪秋の土曜登録会in横浜  9/1開催決定！≫</dd>
+					<dt>2012.08.08</dt>
+					<dd>インテ×テンプで忙しいあなたの転職を徹底サポート！<br>インテリジェンスとテンプスタッフ・テクノロジーが合同で土曜登録会を開催！</dd>
+					<dt>2012.08.03</dt>
+					<dd>Challenge AutoCAD！スケジュール第2弾更新しました！</dd>
+					<dt>2012.07.30</dt>
+					<dd>アーリー（早朝）登録会始めました！＠銀座オフィス</dd>
+					<dt>2012.07.20</dt>
+					<dd>今年も始まります！Challenge AutoCAD！</dd>
+					<dt>2012.06.29</dt>
+					<dd>お客様、並びにスタッフの皆様へ<br />2012年8月13日（月）、8月14日（火）は会社休日となり、全オフィスはお休みを頂きます。<br />皆様にはご迷惑をおかけいたしますが、何卒よろしくお願い申し上げます。</dd>
+					<dt>2012.06.29</dt>
+					<dd>7/21　幕張オフィス　土曜登録会開催</dd>
+					<dt>2012.06.27</dt>
+					<dd>会場が選べる！＜ITエンジニア・CAD設計者・WEBクリエイター・DTPオペレーター＞<br />難波オフィス　堺オフィス　出張登録説明会開催</dd>
+					<dt>2012.06.25</dt>
+					<dd><a href="/company/press/release_12_06_25.html">【プレスリリース】テンプグループ　急増するiOSニーズに対応<br />企業のiPad/iPhone導入をサポート<br />ハウコム　テンプスタッフ・テクノロジーで課題解決を</a></dd>
+					<dt>2012.06.22</dt>
+					<dd class="noLink">6/30　幕張オフィス　土曜登録会開催</dd>
+					<dt>2012.06.11</dt>
+					<dd class="noLink">システムメンテナンスのお知らせ<br />6/24（日）AM1：00～PM12：00にメンテナンスを行います。<br />ご利用のお客様にはご不便をおかけいたしますが、何卒ご理解とご協力賜りますようお願いいたします。</dd>
+					<dt>2012.06.11</dt>
+					<dd class="noLink">堺周辺にお住まいの方は是非！＜ITエンジニア・CAD設計者・WEBクリエイター・DTPオペレーター＞<br />6/14(木)、21（木）　大阪オフィス　出張登録説明会開催</dd>
+					<dt>2012.06.11</dt>
+					<dd>6/16、23、30　神奈川Coセンター　土曜登録会開催</dd>
+					<dt>2012.06.01</dt>
+					<dd><a href="/company/press/release_12_06_01.html">【プレスリリース】Ｃｏｍｂｉ×テンプスタッフ・テクノロジー<br>ベビーシューズ デザインコンペティション開催<br>～ママデザイナーを応援！グランプリは業務委託契約+賞金10万円～</a></dd>
+					<dt>2012.06.01</dt>
+					<dd><a href="/seminar_event/combi/index.html">Combi×テンプスタッフ・テクノロジーデザインコンペティンション開催<br>～才能あるデザイナーと企業の出会いの場を提供～</a></dd>
+					<dt>2012.05.24</dt>
+					<dd class="noLink">6/2、9、23　銀座Coセンター　土曜登録会開催</a></dd>
+					<dt>2012.05.18</dt>
+					<dd class="noLink">6/23　幕張オフィス　土曜登録会開催</a></dd>
+					<dt>2012.05.07</dt>
+					<dd>第21回テンプグループ・ワールドワイド・スカラシップの募集を開始致しました。</dd>
+				</dl>
+			</div>
+			<!-- / .textBox01 -->
+		</div>
+		<!-- / #list2012 -->
+
+		<div id="info2011" class="show">
+			<h3 class="subTitle"><img src="http://www.temptech.co.jp/img/info/index_ttl_04.gif" alt="2011年度" /></h3>
+			<div class="textBox01">
+				<dl class="list01 clearfix">
+					<dt>2012.3.21</dt>
+					<dd><a href="/seminar/seminar_detail.php?SID=KONAMI">2012.3.22　KONAMI　U・Iターン採用セミナー＆個別面談会<br />～多数のヒット実績を誇る『KONAMI』がソーシャルゲーム開発エンジニアを大募集します！～</a></dd>
+					<dt>2012.3.21</dt>
+					<dd>【ﾋﾞｼﾞﾈｽTips】第13回「コミュニケーションと交渉・説得術」掲載</dd>
+					<dt>2012.3.14</dt>
+					<dd><a href="/seminar_event/120309.html">3.9【首都圏セミナー】ITエンジニアのための英語講座</a></dd>
+					<dt>2012.3.14</dt>
+					<dd><a href="/seminar_event/120307.html">3.7【首都圏セミナー】ﾃﾞｼﾞﾊﾘ･ｵﾝﾗｲﾝｽｸｰﾙ×ﾃﾝﾌﾟｽﾀｯﾌ･ﾃｸﾝﾛｼﾞｰ<br />～『いま仕事が取れるスキルとは？』Web職種の最新求人傾向を分析し確実な就職・転職へ！～ </a></dd>
+					<dt>2012.3.7</dt>
+					<dd class="noLink">3.28【首都圏セミナー】「伝える技術」～提案と今までの復習～</dd>
+					<dt>2012.3.2</dt>
+					<dd><a href="/seminar_event/120328.html">3.28【首都圏セミナー】「初めてのPHP5」読書会<br />～ 第2回　必ず押さえておきたい文字列の操作 ～</a></dd>
+					<dt>2012.3.2</dt>
+					<dd class="noLink">【千葉県内出張登録会】千葉エリアでお仕事をご希望される方必見！3月出張登録会を開催</dd>
+					<dt>2012.2.15</dt>
+					<dd class="noLink"> CADオペレータ就業支援プログラム<br />Challenge AutoCAD説明会日程UPしました</dd>
+					<dt>2012.1.30</dt>
+					<dd class="noLink">【厚木オフィス】《2012年度の転職は今が勝負！！》土曜登録会開催！</dd>
+					<dt>2012.1.30</dt>
+					<dd class="noLink">【名古屋オフィス】土曜登録会 2月・3月 毎週開催！！<br />夜間登録も随時開催中！！</dd>
+					<dt>2012.1.25</dt>
+					<dd class="noLink">【岐阜で働こう】2.18、3.10岐阜エリア出張登録説明会開催</dd>
+					<dt>2012.1.23</dt>
+					<dd class="noLink">2.23　【幕張セミナー】<br />【Internet Basic】インターネットの仕組みを知ろう！</dd>
+					<dt>2012.1.18</dt>
+					<dd class="noLink">【千葉県内出張登録会】<br />柏エリア、千葉エリアでお仕事をご希望される方必見！１月、２月出張登録会を開催</dd>
+					<dt>2012.1.13</dt>
+					<dd class="noLink">2.1　【首都圏セミナー】「聞く技術」　～傾聴と質問～</dd>
+					<dt>2011.12.02</dt>
+					<dd class="noLink">CADオペレータ就業支援プログラム Challenge AutoCAD説明会日程UPしました</dd>
+					<dt>2011.11.29</dt>
+					<dd><a href="/seminar_event/111219.html">12.19【首都圏セミナー】「ITエンジニアのための英語講座」</a></dd>
+					<dt>2011.11.25</dt>
+					<dd><a href="/seminar_event/competition/compe_index.html">ありがとう☆キャンペーン！！デザインコンペティション結果発表☆</a></dd>
+					<dt>2011.11.22</dt>
+					<dd><a href="/seminar_event/111213.html">12.13【首都圏セミナー】『2時間でわかるビジネスコーチングのいろは』</a></dd>
+					<dt>2011.11.18</dt>
+					<dd class="noLink">12.10　銀座オフィス土曜登録会開催！！</dd>
+					<dt>2011.11.18</dt>
+					<dd class="noLink"><a href="/info/111118.html">新規来社登録キャンペーン！<br /> ～『日経NETWORK』もしくは『日経SYSTEMS』プレゼント～</a></dd>
+					<dt>2011.11.15</dt>
+					<dd class="noLink">11.30、12.14【首都圏セミナー】「振り返り」の技術</dd>
+					<dt>2011.11.04</dt>
+					<dd><a href="/seminar_event/111207.html">12.7【首都圏セミナー】WebデザイナーのためのPHP30分間クッキング・セミナー</a></dd>
+					<dt>2011.11.04</dt>
+					<dd><a href="/seminar_event/111207.html">12.2【首都圏セミナー】WebプログラマーのためのPHP30分間クッキング・セミナー</a></dd>
+					<dt>2011.10.26</dt>
+					<dd class="noLink">11.16【首都圏セミナー】「分かりやすさ」の技術</dd>
+					<dt>2011.10.24</dt>
+					<dd><a href="/seminar_event/111110.html">11.10【首都圏セミナー】システムインフラはどのように防御されているか</a></dd>
+					<dt>2011.10.24</dt>
+					<dd><a href="/seminar_event/111121.html">11.21【首都圏セミナー】【組込み開発体験】 開発キットでアプリ作成体験！</a></dd>
+					<dt>2011.10.14</dt>
+					<dd class="noLink">ありがとう☆キャンペーン！！デザインコンペティション開催のお知らせ☆</dd>
+					<dt>2011.10.14</dt>
+					<dd class="noLink">CADオペレータ就業支援プログラム Challenge AutoCAD説明会日程UPしました</dd>
+					<dt>2011.10.6</dt>
+					<dd class="noLink">10.20【首都圏セミナー】「分かりやすさ」の技術</dd>
+					<dt>2011.9.15</dt>
+					<dd class="noLink">【横須賀】横須賀近辺で働こう！<br />登録会＜ＩＴエンジニア・ＣＡＤ設計・クリエイター＞</dd>
+					<dt>2011.9.15</dt>
+					<dd class="noLink">【藤沢】藤沢近辺で働こう！<br />登録会＜ＩＴエンジニア・ＣＡＤ設計・クリエイター＞</dd>
+					<dt>2011.9.9</dt>
+					<dd><a href="/seminar_event/111020.html">10.20【首都圏セミナー】【上流工程入門】見えない要求を引き出す秘訣</a></dd>
+					<dt>2011.9.9</dt>
+					<dd><a href="/seminar_event/111007.html">10.7【首都圏セミナー】通信キャリアが提供するWANサービス</a></dd>
+					<dt>2011.9.7</dt>
+					<dd class="noLink">9.11（日）1:00～10:00はﾒﾝﾃﾅﾝｽの為、Webｻｰﾋﾞｽを停止いたします。<br />ご迷惑をおかけしますが、ご了承の程お願い申し上げます。</dd>
+					<dt>2011.8.26</dt>
+					<dd><a href="/seminar_event/110906_2.html">9.6【セミナー】グラフィック経験を活かしたプレゼン資料の作成　無料 Power Point研修</a></dd>
+					<dt>2011.8.25</dt>
+					<dd><a href="/seminar_event/110906_1.html">9.6【セミナー】WEBディレクターになる人のためのリーダーシップセミナー</a></dd>
+					<dt>2011.8.22</dt>
+					<dd class="noLink">9.6、14合同登録会<br />みなとみらい・横浜／海老名エリアでお仕事をお探しの皆様必見！<br />テンプスタッフ・テクノロジー&times;テンプスタッフ・クロス</dd>
+					<dt>2011.8.17</dt>
+					<dd><a href="/seminar_event/110921.html">9.21【セミナー】【開講記念セミナー】「PHP技術者認定初級試験対策」コース開講にあたって</a></dd>
+					<dt>2011.8.17</dt>
+					<dd><a href="/training/other/nec_php.html">「テンプスタッフ・テクノロジーPHP技術習得支援プログラム」のご紹介</a></dd>
+					<dt>2011.8.16</dt>
+					<dd><a href="/school/index.html#dhw">登録スタッフ特別価格でご提供! デジハリ・オンラインスクール(eラーニング）</a></dd>
+					<dt>2011.8.12</dt>
+					<dd class="noLink">9.3・9.10【銀座】土曜登録会開催</dd>
+					<dt>2011.8.11</dt>
+					<dd><a href="/seminar_event/110823.html">8.23【セミナー】デジタルハリウッドとのコラボ企画！～スマホアプリの企画・制作無料セミナー開催～</a></dd>
+					<dt>2011.8.10</dt>
+					<dd class="noLink">9.10【幕張】土曜登録会開催</dd>
+					<dt>2011.8.10</dt>
+					<dd class="noLink">8.24【セミナー】千葉県でCADオペレーターとして働こう</dd>
+					<dt>2011.8.3</dt>
+					<dd class="noLink">9.10【岐阜で働こう】岐阜エリア出張登録説明会開催</dd>
+					<dt>2011.8.1</dt>
+					<dd><a href="/seminar_event/110914.html">9.14【首都圏/セミナー】【Android Basic】Androidアプリを作ってみよう！</dd>
+					<dt>2011.7.29</dt>
+					<dd><a href="/seminar_event/110908.html">9.8【首都圏/セミナー】【Internet Basic】インターネットの仕組みを知ろう！</a></dd>
+					<dt>2011.7.29</dt>
+					<dd><a href="/seminar_event/110829.html">8.29【首都圏/セミナー】jQuery Mobileで作成する初めてのスマートフォン対応サイト</a></dd>
+					<dt>2011.7.15</dt>
+					<dd class="noLink">8.20【神奈川】テクニカルサポート・NWインフラ・CADの方向け土曜登録会開催</dd>
+					<dt>2011.7.8</dt>
+					<dd><a href="/seminar_event/110824.html">8.24【首都圏/セミナー】業務系エンジニアも知っておきたいjQuery</a></dd>
+					<dt>2011.7.8</dt>
+					<dd><a href="/seminar_event/110803.html">8.3【首都圏/セミナー】「Flash Marketing」をまとめてみました</a></dd>
+					<dt>2011.7.1</dt>
+					<dd class="noLink">7.14、22【東海/セミナー】CATIA V5 無料体験講座</dd>
+					<dt>2011.6.24</dt>
+					<dd><a href="/seminar_event/110730.html">7.30【首都圏/セミナー】Revit Architectureハンズオンセミナー</a></dd>
+					<dt>2011.6.22</dt>
+					<dd class="noLink">7.6【セミナー】千葉県でお仕事がしたい!!<br />～　今「正社員とは異なる働き方」を考えてみる　～</dd>
+					<dt>2011.6.17</dt>
+					<dd class="noLink">7.9、8.6【岐阜で働こう】岐阜エリア出張登録説明会開催</dd>
+					<dt>2011.6.6</dt>
+					<dd class="noLink">8.3【首都圏/セミナー】「Flash Marketing」をまとめてみました</dd>
+					<dt>2011.6.10</dt>
+					<dd class="noLink">【好評につき追加開催決定】みなとみらい・横浜で働こう！3社合同登録説明会<br />テンプスタッフ&times;テンプスタッフ・テクノロジー&times;テンプスタッフ・クロス</dd>
+					<dt>2011.6.9</dt>
+					<dd class="noLink">7.16【神奈川】開発、Webデザイン・DTPデザインの方向け土曜登録会開催</dd>
+					<dt>2011.6.6</dt>
+					<dd class="noLink">6.18【神奈川】CADオペレータ・CAD設計者の方向け土曜登録会開催</dd>
+					<dt>2011.6.6</dt>
+					<dd><a href="/seminar_event/110721.html">7.21【首都圏/セミナー】【NW Basic】Linuxを触ってみよう！</a></dd>
+					<dt>2011.6.1</dt>
+					<dd class="noLink">6.14、22【東海/セミナー】CATIA V5 無料体験講座</dd>
+					<dt>2011.5.27</dt>
+					<dd class="noLink">テンプスタッフ&times;テンプスタッフ・テクノロジー&times;テンプスタッフ・クロス<br />みなとみらい・横浜で働こう！3社合同登録説明会</dd>
+					<dt>2011.5.20</dt>
+					<dd><a href="/seminar_event/110706.html">7.6【首都圏/セミナー】Web脆弱性対策のすすめ</a></dd>
+					<dt>2011.5.13</dt>
+					<dd class="noLink">5.27　MicrosoftクラウドサービスBPOS<br />｢1,000円から始めるBCP（事業継続計画）セミナー｣開催</dd>
+					<dt>2011.5.11</dt>
+					<dd><a href="/seminar_event/110628.html">6.28【首都圏/セミナー】スマートフォンとHTML5とゲーム</a></dd>
+					<dt>2011.5.11</dt>
+					<dd><a href="/seminar_event/110616.html">6.16【首都圏/セミナー】ヘルプデスクのお仕事に役立つITILとは</a></dd>
+					<dt>2011.4.28</dt>
+					<dd class="noLink">5.17、6.15　【関西「BPOS」無料セミナー】<br />Microsoft Online Services での業務効率化とコスト削減</dd>
+					<dt>2011.4.27</dt>
+					<dd><a href="/seminar_event/110530.html">5.30【首都圏/セミナー】新たな設計手法「BIM」とは？</a></dd>
+					<dt>2011.4.27</dt>
+					<dd><a href="/seminar_event/110527.html">5.27【首都圏/セミナー】Webエンジニアが知っておきたいWebセキュリティ（入門）</a></dd>
+					<dt>2011.4.6</dt>
+					<dd class="noLink">【東海】登録スタッフ限定◇CATIA-V5端末無料開放のご案内</dd>
+				</dl>
+			</div>
+			<!-- / .textBox01 -->
+		</div>
+		<!-- / #list2011 -->
+
+		<div id="info2010" class="show">
+			<h3 class="subTitle"><img src="http://www.temptech.co.jp/img/info/index_ttl_03.gif" alt="2010年度" /></h3>
+			<div class="textBox01">
+				<dl class="list01 clearfix">
+					<dt>2011.3.9</dt>
+					<dd class="noLink">3.17　ICTブラッシュアッププログラム説明会開催！！</dd>
+					<dt>2011.2.25</dt>
+					<dd class="noLink">3月度　Challenge AutoCAD説明会日程掲載！！</dd>
+					<dt>2010.2.23</dt>
+					<dd class="noLink">3.24「BPOS」無料セミナー　Microsoft Online Services での業務効率化とコスト削減</dd>
+					<dt>2011.2.4</dt>
+					<dd class="noLink">TOEIC800点突破講座！＜語学TOEIC Score up>から検索！</dd>
+					<dt>2011.1.31</dt>
+					<dd class="noLink">2.8　ICTブラッシュアッププログラム説明会開催！！</dd>
+					<dt>2010.1.31</dt>
+					<dd class="noLink">2.24「BPOS」無料セミナー　Microsoft Online Services での業務効率化とコスト削減</dd>
+					<dt>2011.1.19</dt>
+					<dd class="noLink">1・2月度　Challenge AutoCAD説明会日程掲載！！</dd>
+					<dt>2011.1.14</dt>
+					<dd class="noLink">転職準備の講座開催！詳細・申込は＜ビジネス講座&rarr;仕事力＞より!</dd>
+					<dt>2011.1.7</dt>
+					<dd class="noLink">千葉県(市原1.18、成田1.24)にて出張登録会開催</dd>
+					<dt>2010.12.27</dt>
+					<dd class="noLink">1.26【無料】Microsoft オンラインサービス　「BPOS」導入セミナー開催</dd>
+					<dt>2010.12.24</dt>
+					<dd class="noLink">【年末年始のお知らせ】12月30日～1月3日までお休みをいただきます </dd>
+					<dt>2010.12.13</dt>
+					<dd class="noLink">大好評！未経験者就職支援プログラム「ChalleｎgeAutoCAD」開催！</dd>
+					<dt>2010.12.10</dt>
+					<dd class="noLink">12.22　ICTブラッシュアッププログラム説明会開催！！</dd>
+					<dt>2010.10.29</dt>
+					<dd class="noLink">未経験者就職支援プログラム「ChalleｎgeAutoCAD」説明会開催！</dd>
+					<dt>2010.10.25</dt>
+					<dd class="noLink"><a href="/seminar_event/web/index.html">【Webで公開（限定）】サイバーエージェント採用セミナー開催！<br />｢アメーバピグ制作の裏側～アメーバピグを動かすピグフレームワーク～｣ </a></dd>
+					<dt>2010.10.4</dt>
+					<dd class="noLink">IT資格取得支援＆就業支援「ICTブラッシュプログラム」開催！</dd>
+					<dt>2010.10.1</dt>
+					<dd class="noLink">大好評！未経験者就職支援プログラム「ChalleｎgeAutoCAD」開催！</dd>
+					<dt>2010.9.17</dt>
+					<dd class="noLink">9.25豊田オフィスにて土曜登録説明会開催</dd>
+					<dt>2010.9.15</dt>
+					<dd class="noLink">千葉県(市原9.28､西船橋10.5､千葉10.13)にて出張登録説明会開催</dd>
+					<dt>2010.9.10</dt>
+					<dd class="noLink">10.13「国内クレジット普及啓発セミナー」(大垣)無料セミナー開催</dd>
+					<dt>2010.9.8</dt>
+					<dd class="noLink">9.23（木祝日）9:00～18:00<br /> システムメンテナンス実施のためスタッフログイン機能、<br /> キャリア・り・チェック機能、研修予約システムのスタッフ様に関わる<br /> 機能が停止いたします。<br /> ご迷惑をおかけいたしますが、ご理解の程よろしくお願い致します。 </dd>
+					<dt>2010.9.6</dt>
+					<dd class="noLink">9.29開催【無料】スキルUPする為のコミュニケーションセミナー</dd>
+					<dt>2010.9.3</dt>
+					<dd class="noLink">千葉県(成田9.7､柏9.14､市原9.28)にて出張登録会開催</dd>
+					<dt>2010.9.1</dt>
+					<dd>&ldquo;無料&rdquo;で学べる職業訓練「基金訓練」のご紹介</dd>
+					<dt>2010.8.20</dt>
+					<dd>時間のない方にオススメ！横浜オフィス夜間登録開催中！</dd>
+					<dt>2010.8.18</dt>
+					<dd class="noLink">9.1､9.8　新宿マインズタワーにて関東エリア出張登録会開催！</dd>
+					<dt>2010.8.11</dt>
+					<dd class="noLink">【無料】仕事を選べるエンジニアになるためのPHPセミナー</dd>
+					<dt>2010.8.11</dt>
+					<dd class="noLink">千葉県(市原8.31､成田9.7､柏9.14)にて出張登録会開催</dd>
+					<dt>2010.8.4</dt>
+					<dd class="noLink">9.29「国内クレジット普及啓発セミナー」(宇都宮)無料セミナー開催</dd>
+					<dt>2010.8.2</dt>
+					<dd class="noLink">9.10「国内クレジット普及啓発セミナー」(高知)無料セミナー開催</dd>
+					<dt>2010.6.22</dt>
+					<dd class="noLink">CAD講座7月スケジュールUP</dd>
+					<dt>2010.6.09</dt>
+					<dd class="noLink">6.19～　新宿オフィス　土曜登録会開催!</dd>
+					<dt>2010.6.09</dt>
+					<dd class="noLink">6.23　代々木オフィス「AutoCADオペレータ応援セミナー開催」</dd>
+					<dt>2010.6.3</dt>
+					<dd class="noLink">7.9「国内クレジット普及啓発セミナー」(四日市)無料セミナー開催</dd>
+					<dt>2010.6.2</dt>
+					<dd class="noLink">7.16「国内クレジット普及啓発セミナー」(大阪)無料セミナー開催</dd>
+					<dt>2010.5.28</dt>
+					<dd class="noLink">7.30「国内クレジット普及啓発セミナー」(広島)無料セミナー開催</dd>
+					<dt>2010.5.17</dt>
+					<dd class="noLink">6.16「国内クレジット普及啓発セミナー」(沖縄)無料セミナー開催</dd>
+					<dt>2010.5.14</dt>
+					<dd class="noLink">6.4「国内クレジット普及啓発セミナー」(札幌)無料セミナー開催</dd>
+					<dt>2010.4.15</dt>
+					<dd class="noLink">5.21「Webセキュリティ対策とセキュリティエンジニア派遣の活用法」無料セミナー開催</dd>
+					<dt>2010.4.15</dt>
+					<dd class="noLink">5.11「国内クレジット普及啓発セミナー」無料セミナー開催</dd>
+				</dl>
+			</div>
+			<!-- / .textBox01 -->
+		</div>
+		<!-- / #info2010 -->
+
+		<div id="info2009" class="show">
+			<h3 class="subTitle"><img src="http://www.temptech.co.jp/img/info/index_ttl_02.gif" alt="2009年度" /></h3>
+			<div class="textBox01">
+				<dl class="list01 clearfix">
+					<dt>2010.3.29</dt>
+					<dd><a href="/seminar_event/100311.html">3.11「NW/ｻｰﾊﾞｴﾝｼﾞﾆｱ向け」ｲﾍﾞﾝﾄﾚﾎﾟｰﾄ</a></dd>
+					<dt>2010.3.17</dt>
+					<dd class="noLink">こだわり社員!インタビュー　掲載</dd>
+					<dt>2010.3.15</dt>
+					<dd><a href="/seminar_event/100218.html">2.18「儲かるWebマーケティング手法とは？」～in　大阪　イベントレポート</a></dd>
+					<dt>2010.2.8</dt>
+					<dd class="noLink">2.23「Gumblar（ガンブラー）の脅威とその対策」セミナー開催</dd>
+					<dt>2010.1.20</dt>
+					<dd class="noLink">こだわり社員!インタビュー　掲載</dd>
+					<dt>2009.12.16</dt>
+					<dd class="noLink">2010.2.18大阪｢儲かるWebマーケティング手法とは？｣セミナー開催</dd>
+					<dt>2009.12.1</dt>
+					<dd class="noLink">2010' 1.13「派遣/請負・委託活用」セミナー開催</dd>
+					<dt>2009.11.20</dt>
+					<dd class="noLink">【12.8名古屋】ﾃﾝﾌﾟｸﾞﾙｰﾌﾟ4社合同『予約不要！お仕事相談ｲﾍﾞﾝﾄ』開催</dd>
+					<dt>2009.10.27</dt>
+					<dd><a href="/seminar_event/091027.html">10.27「派遣/請負・委託活用」セミナーイベントレポート掲載</a></dd>
+					<dt>2009.9.24</dt>
+					<dd><a href="/seminar_event/090908.html">9.8開催｢儲かるWebﾏｰｹﾃｨﾝｸﾞ手法とは?｣ｲﾍﾞﾝﾄﾚﾎﾟｰﾄ掲載</a></dd>
+					<dt>2009.9.4</dt>
+					<dd class="noLink">【9.9,10,17,18　厚木】､【9.10,16　立川】にて転職キャリア相談会開催！</dd>
+					<dt>2009.8.19</dt>
+					<dd class="noLink">【8.26　厚木】、【9.10、16　立川】にて転職キャリア相談会開催！</dd>
+					<dt>2009.8.4</dt>
+					<dd class="noLink">【8.10～8.13　豊橋】キャリアカウンセラーによるキャリア相談会開催！</dd>
+					<dt>2009.7.13</dt>
+					<dd class="noLink">【7.22　立川・豊橋】、【7.29　刈谷】にてIT転職キャリア相談会開催！</dd>
+					<dt>2009.6.17</dt>
+					<dd><a href="/seminar_event/090526.html">5.26～　「2009 NEW 環境展」イベントレポート掲載</a></dd>
+					<dt>2009.5.21</dt>
+					<dd><a href="/seminar_event/090417.html">4.17開催！　中小企業様必見！今すぐはじめるSBS2008onDell無償セミナーレポート掲載</a></dd>
+					<dt>2009.5.19</dt>
+					<dd class="noLink">新型インフルエンザへの対策・対応について(5.19)</dd>
+					<dt>2009.5.18</dt>
+					<dd class="noLink">【首都圏】AutoCAD　Webﾌﾟﾛｸﾞﾗﾐﾝｸﾞ　講座開講</dd>
+				</dl>
+			</div>
+			<!-- / .textBox01 -->
+		</div>
+		<!-- / #info2009 -->
+
+		<div id="info2008" class="show">
+			<h3 class="subTitle"><img src="http://www.temptech.co.jp/img/info/index_ttl_01.gif" alt="2008年度" /></h3>
+			<div class="textBox01">
+				<dl class="list01 clearfix">
+					<dt>2009.3.11</dt>
+					<dd><a href="/seminar_event/090221.html">2.21開催！　1級、2級建築士受験対策セミナーイベントレポート掲載</a></dd>
+					<dt>2009.3.9</dt>
+					<dd><a href="/seminar_event/090225.html">2.25開催！　名古屋　環境エコセミナーイベントレポート掲載</a></dd>
+					<dt>2009.2.25</dt>
+					<dd><a href="/seminar_event/090213.html">2.13開催！　ＩＴエンジニアカンファレンス　イベントレポート掲載</a></dd>
+					<dt>2009.1.08</dt>
+					<dd class="noLink">宇都宮オフィス限定！1.末まで新規来社登録キャンペーン実施中！</dd>
+					<dt>2008.12.19</dt>
+					<dd><a href="/seminar_event/ms090119/index.html"> 1.19開催　第2回マイクロソフト共催無料セミナー<br /> 「最新Windows Serverで実現するコスト削減・セキュリティ向上セミナー」</a></dd>
+					<dt>2008.12.08</dt>
+					<dd><a href="http://www.tempstaff.co.jp/corporate/support/scholarship/">第19回テンプスタッフ・ワールドワイド・スカラシップ募集スタート！</a></dd>
+					<dt>2008.11.18</dt>
+					<dd><a href="/seminar_event/081030.html">10.1　第11回関西設計・製造ソリューション展【DMS】出展ﾚﾎﾟｰﾄ掲載</a></dd>
+					<dt>2008.10.08</dt>
+					<dd><a href="/seminar_event/080912.html">9.12開催　NOREN Proｺﾝﾌｧﾚﾝｽ 2008 Vol.1　ｲﾍﾞﾝﾄﾚﾎﾟｰﾄ掲載</a></dd>
+					<dt>2008.9.30</dt>
+					<dd><a href="/seminar_event/080915.html">9.15開催　ETロボコン2008　関東大会　Cブロック3位入賞！</a></dd>
+					<dt>2008.7.07</dt>
+					<dd><a href="/seminar_event/080621.html">｢6.21開催　@IT主催　ﾌﾘｰｴﾝｼﾞﾆｱｶﾝﾌｧﾚﾝｽ｣のﾚﾎﾟｰﾄ掲載 </a></dd>
+					<dt>2008.6.04</dt>
+					<dd><a href="/seminar_event/080517.html">｢5.17開催されたDTP Creator&rsquo;s Conference 2008｣のﾚﾎﾟｰﾄ掲載</a></dd>
+					<dt>2008.2.06</dt>
+					<dd class="noLink">DTP『InDesignオペレータ』育成講座説明会　2.25・3.4開催！</dd>
+					<dt>2008.1.07</dt>
+					<dd class="noLink">DTP『InDesignオペレータ』育成講座説明会　1.22・25開催！</dd>
+					<dt>2008.1.07</dt>
+					<dd class="noLink">『AutoCADオペレータ』無料育成講座説明会　1.22・24・29・31、2.4開催！</dd>
+				</dl>
+			</div>
+			<!-- / .textBox01 -->
+		</div>
+		<!-- / #info2008 -->
+
+		<div class="pageTop"><a href="#header">↑このページの先頭へ</a></div>
+	</div>
+	<!-- / #mainColumn -->
+
+	<!--▼leftColumn▼-->
+	<div id="rightColumn">
+		<div id="bnJobCheckit"><a href="https://www.jobcheckit.com/jbch/top.do" onclick="javascript:_gaq.push(['_trackPageview', '/cojp_13']);"><img src="http://www.temptech.co.jp/img/common/bnr_jobcheckit_01.gif" alt="ジョブチェキ！" /></a></div>
+		<div id="bnJobCheckit"><a href="http://www.temp-holdings.co.jp/"><img src="http://www.temptech.co.jp/img/common/bnr_th.jpg" alt="テンプホールディングス" /></a></div>
+		<div id="privacyMark"><a href="http://privacymark.jp/" onclick="javascript:_gaq.push(['_trackPageview', '/cojp_14']);"><img src="http://www.temptech.co.jp/img/common/bnr_privacy.gif" alt="プライバシーマーク" /></a></div>
+	</div>
+	<!-- / #rightColumn -->
+
+</div>
+<!-- / .contents -->
+
+
+ <!--▼footer▼-->
+<div id="footer">
+	<div id="footer2">
+		<div id="footer3">
+			<div id="footer4">
+				<ul id="footNav">
+					<li class="guide"><a href="http://haken.temptech.co.jp/guide/index.html">派遣のお仕事がはじめての方へ</a></li>
+					<li class="jobsearch"><a href="http://haken.temptech.co.jp/jobsearch/">仕事検索</a></li>
+					<li class="recruit"><a href="http://recruit.temptech.co.jp/">テンプスタッフ・テクノロジーの採用情報</a></li>
+					<li class="company"><a href="/company/">会社案内</a>
+						<ul>
+							<li><a href="/company/idea.html">ごあいさつ・企業理念</a></li>
+							<li><a href="/company/outline.html">企業概要</a></li>
+							<li><a href="/company/history.html">沿革</a></li>
+							<li><a href="/company/press/">プレスリリース</a></li>
+						</ul>
+					</li>
+					<li class="office"><a href="/office/">オフィス一覧</a></li>
+					<li class="enterprise"><a href="/enterprise/">企業のご担当者様へ</a>
+						<ul>
+							<li><a href="/enterprise/scene.html">ご活用シーン</a></li>
+							<li><a href="/enterprise/faq.html">FAQ</a></li>
+							<li><a href="/enterprise/2012kaisei_faq.html">2012年改正労働者派遣法について</a></li>
+							<li><a href="/enterprise/jyoukyou.html">労働者派遣の状況(情報公開)</a></li>
+							<li><a href="/form/apply.php?FID=0004">資料請求・お問い合わせフォーム</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="otherLink"> <a href="/how_to/">サイトのご利用にあたって</a>　 <a href="/policy01/">個人情報保護方針</a>　 <a href="/policy02/">個人情報の取り扱いについて</a>　 <a href="/policy03/">テンプグループ情報セキュリティ基本方針</a>　 <a href="http://www.tempstaff.co.jp/">テンプグループ会社のご案内について</a> </div>
+				<div class="copyrignt">COPYRIGHT &copy; SINCE2003 TEMPSTAFF TECHNOLOGIES CO., LTD. ALL RIGHTS RESERVED.</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- / #footer -->
+
+
+</div>
+<!--/ #wrapper-->
+</body>
+</html>
